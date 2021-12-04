@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clientejs
+spec:
+  selector:
+    matchLabels:
+        app: orientdb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: orientdb
+    spec:
+      containers:
+      - name: clientejs
+        image: jonpor13/entrega_individual_orientdb:latest
+        ports:
+        - containerPort: 2424 
+          
+      

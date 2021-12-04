@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+   name: clientjs-service
+spec:
+   selector:
+      component: orientdb
+   ports:
+      - port: 2424
+        targetPort: 2424

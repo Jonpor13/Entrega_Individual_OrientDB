@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: orientdbservice
+  labels:
+    service: orientdb
+    type: headless-service
+spec:
+  clusterIP: None
+  selector:
+    service: orientdb
+    type: container-deployment
+  ports:
+  - protocol: TCP
+    port: 2424
+    name: binary
+  - protocol: TCP
+    port: 2480
+    name: http

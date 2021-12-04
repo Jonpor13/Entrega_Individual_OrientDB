@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orientdbservice
+spec:
+  selector:
+    matchLabels:
+        app: orientdb
+  template:
+    metadata:
+      labels:
+        app: orientdb
+    spec:
+      containers:
+      - name: orientdbservice
+        image: orientdb:latest
+        env:
+        - name: ORIENTDB_ROOT_PASSWORD
+          value: rootpwd
+        ports:
+        - containerPort: 2424
+          name: port-binary
+        - containerPort: 2480
+          name: port-http
