@@ -53,5 +53,5 @@ Si queréis comprobar que la clase "prueba" esté dentro de la base de datos de 
 
 ## Expresiones de Gratitud 🎁
 
-A todos los que me han ayudado, muchas gracias. Os invito a un McFurry 😜😂
+A todos los que me han ayudado, muchas gracias. Os invito a un McFlurry 😜😂
 
