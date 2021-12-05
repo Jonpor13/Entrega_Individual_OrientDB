@@ -17,7 +17,7 @@ Ahora, si usamos `docker ps` veremos como nuestro contenedor del servidor de Ori
 
 ![alt text](https://github.com/Jonpor13/Entrega_Individual_OrientDB/blob/main/Imagenes/Captura2.PNG)
 
-*Atención, el id del contenedor se usará más adelante.*
+*Atención, el id del contenedor no tiene que ser el mismo que el de la imagen y se usará más adelante.*
 
 
 ## Comprobando que todo funciona 👍
